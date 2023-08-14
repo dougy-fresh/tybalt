@@ -12,7 +12,7 @@
         "generate-types": "tsc",
         "watch": "esbuild src/**/!(*.d).ts --format=esm --outdir=dist --watch",
         "cli": "node dist/index.js",
-        "test": "jest"
+        "test": "mkdirp out && jest"
     },
     "type": "module",
     "keywords": [
